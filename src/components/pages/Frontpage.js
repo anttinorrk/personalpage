@@ -21,9 +21,9 @@ const Frontpage = () => {
                         </p>
                     </div>
                     <div className='portrait-container'>
-                        <img id='portrait-img' src={Portrait} />
+                        <img id='portrait-img' src={Portrait} alt='portrait' />
                     </div>
-                    <img id='mountain-img' src={Mountain} />
+                    <img id='mountain-img' src={Mountain} alt='' />
             </section>
             
             <section className='skills-section'>

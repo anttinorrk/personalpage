@@ -15,7 +15,7 @@ export const Projectcard = (props) => {
     return (
         <>
         <div className='card-wrapper'>
-            <img className='project-img' src={props.image} />
+            <img className='project-img' src={props.image} alt='' />
             <div className='project-text'  onClick={handleDetails}>
                 <h2 className='project-title'>{props.title}</h2>
                 <div className='tag-container'>
