@@ -5,11 +5,7 @@ import { ProjectList } from '../parts/Projectlist'
 
 const Projectpage = () => {
 
-    const [detailkey, setDetailkey] = useState('3')
-
-    const updateKey = (a) => {
-        console.log(a)
-    }
+    
 
     return (
         <>
