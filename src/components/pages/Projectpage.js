@@ -1,12 +1,7 @@
 import React, {useState} from 'react'
 import { Projectcard } from '../parts/Projectcard'
 import './Projectpage.css'
-import SSWeather from '../media/ssweather-min.jpg'
-import SSPortfolio from '../media/ssportfolio-min.jpg'
-import SSSuurempaa from '../media/sssuurempaa-min.jpg'
-import SSDatabase from '../media/ssdatabase-min.jpg'
 import { ProjectList } from '../parts/Projectlist'
-import { Projectdetails } from '../parts/Projectdetails'
 
 const Projectpage = () => {
 

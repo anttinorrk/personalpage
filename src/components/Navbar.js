@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className={`navbar-wrapper ${scrolled ? 'scrolled' : ''}`}>
                 <div className='navlogo-container'>
                     <a href='/'>
-                        <img id='logo' src={anvector} />
+                        <img id='logo' src={anvector} alt='logo'/>
                     </a>
                 </div>
                 <div className={`menuicon-container ${opened ? 'opened' : ''}`} onClick={handleBurger}>

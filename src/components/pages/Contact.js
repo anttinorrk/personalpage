@@ -16,7 +16,7 @@ const Contact = () => {
                     <p>Hit me up in any of my social media profiles linked below and let's see if I'm the right fit for your project or company right now or sometime in future!</p>
                 </div>
                 <div className='skimbaimg-container'>
-                    <img id='skimba-img' src={Skimba} />
+                    <img id='skimba-img' src={Skimba} alt='' />
                 </div>
             </section>
         </div>

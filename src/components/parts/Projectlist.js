@@ -1,7 +1,3 @@
-import SSPortfolio from '../media/ssportfolio-min.jpg'
-import SSWeather from '../media/ssweather-min.jpg'
-import SSSuurempaa from '../media/sssuurempaa-min.jpg'
-import SSDatabase from '../media/ssdatabase-min.jpg'
 
 export const ProjectList = [
     {
