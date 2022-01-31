@@ -1,0 +1,93 @@
+/*Positions the element on page*/
+.skill-wrapper {
+    width: 95%;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+/*Element to hide the dropping text box*/
+.title-wrapper {
+    width: 100%;
+    background: #111111;
+    position: relative;
+    border-radius: 0 0 25px 25px;
+    z-index: 1;
+}
+/*Title element*/
+.gradient-border {
+    border-radius: 100px;
+    background-image: linear-gradient(to right, rgba(190, 226, 222, 1), rgba(161, 242, 174, 1));
+    display: flex;
+    height: 63px;
+    align-items: center;
+    justify-content: center;
+}
+.skill-container {
+    background: #111111;
+    width: calc(100% - 8px);
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 250px;
+    position: relative;
+}
+.skill-container h3 {
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+/*DROPDOWN TEXT BOX*/
+.text-container {
+    background: #222222;
+    width: 100%;
+    padding-top: 30px;
+    transform: translateY(-250px);
+    transition: all .5s ease-out;
+    border-radius: 0 0 25px 25px;
+    position: relative;
+    display: block;
+    height: 0;
+}
+.text-container.dropped {
+    transform: translateY(-31.5px);
+    height: auto;
+}
+.text-container p {
+    padding: 0 10px 20px 20px;
+}
+
+
+/*PLUS ICON*/
+.plus-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+}
+.plus-icon__horizontal {
+    width: 35px;
+    height: 3px;
+    background: #ffffff;
+}
+.plus-icon__horizontal::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    width: 3px;
+    height: 35px;
+    background: #ffffff;
+}
+.plus-icon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.plus-icon.close {
+    transform: rotate(225deg);
+}

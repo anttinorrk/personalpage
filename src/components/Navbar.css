@@ -1,0 +1,206 @@
+
+
+
+
+/*MOBILE MENU*/
+.menuicon-container {
+    display: none;
+    width: 43px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    z-index: 11;
+    margin-top: 10px;
+}
+.menuicon-container:hover {
+    transform: scale(1.05);
+}
+.burger {
+    width: 35px;
+    height: 3px;
+    background: #ffffff;
+    transition: all .3s ease-out;
+    position: absolute;
+    right: 0;
+}
+.burger:before, .burger:after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: #ffffff;
+    transition: all .3s ease-out;
+}
+.burger:before {
+    transform: translate(-8px, -13px);
+}
+.burger:after {
+    transform: translate(-8px, 13px);
+}
+.nav-link a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+/*HOVER UNDERLINE*/
+.nav-link a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #BEE2DE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.nav-link a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#logo {
+    width: 60px;
+}
+.navbar-wrapper {
+    position: fixed;
+    padding: 20px 0 0 30px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+}
+@media screen and (min-width: 936px) {
+    #logo {
+        margin: 0;
+    }
+    .background-dark {
+        display: none;
+    }
+
+    
+    .navlinks {
+        list-style: none;
+        margin: 0 70px 0 0;
+        padding: 15px 0px 10px 20px;
+        border-radius: 30px;
+        transition: all 0.25s ease-out;
+    }
+    .navlinks.scrolled {
+        opacity: 30%;
+    }
+    .navlinks.scrolled:hover {
+        opacity: 100%;
+        background-color: #111111;
+    }
+
+    .nav-link {
+        display: inline;
+        list-style: none;
+        margin-right: 30px;
+    }
+    
+    
+    .navlinks-wrapper .someicons-wrapper {
+        display: none;
+    }
+   
+
+}
+@media screen and (max-width: 935px) {
+    .navlogo-container {
+        max-width: 50px;
+    }
+    #logo {
+        width: 50px;
+    }
+    .background-dark {
+        left: 100%;
+        opacity: 0%;
+        transition: all 0.5s ease-out;
+    }
+    .background-dark.opened {
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+        background-color: black;
+        opacity: 70%;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        margin: 0;
+    }
+
+    .navbar-wrapper {
+        padding: 10px 0 0 10px;
+        width: 100vw;
+        height: 70px;
+        top: 0;
+        left: 0;
+    }
+    .navbar-wrapper.scrolled {
+        background-color: #222222;
+    }
+    .navlinks-wrapper {
+        position: fixed;
+        width: 70%;
+        background: #222222;
+        height: 100vh;
+        margin: 0;
+        top: 0;
+        right: -100%;
+        opacity: 0%;
+        transition: all .5s ease-in-out;
+    }
+    .navlinks-wrapper.opened {
+        right: 0;
+        opacity: 100%;
+    }
+    .navlinks-wrapper.opened .navlinks::before {
+        content: '';
+        height: 3px;
+        width: 100%;
+        left: 0;
+        background-image: linear-gradient(to right, rgba(190, 226, 222, 1), rgba(161, 242, 174, 1));
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 0 0;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-link {
+        margin: 30px 0 0 10%;
+    }
+
+
+    /*HAMBURGER ICON*/
+    .menuicon-container {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 10px;
+        right: 40px;
+    }
+    .menuicon-container.opened .burger {
+        transform: translateX(-100px);
+        background: transparent;
+    }
+    .menuicon-container.opened .burger::before {
+        transform: rotate(45deg) translate(64px, -64px);
+    }
+    .menuicon-container.opened .burger::after {
+        transform: rotate(-45deg) translate(64px, 64px);
+    }
+
+    
+    
+
+    
+}

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'aqua';
+  src: url(components/media/aqua.ttf);
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(components/media/Montserrat-Medium.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #111111;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nav-link a {
+  font-size: 20px;
+  font-family: 'aqua', 'Arial';
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: clamp(50px, 10vw, 100px);
+  font-family: 'aqua', 'montserrat', 'Arial';
+  font-weight: lighter;
+}
+h2 {
+  font-size: clamp(25px, 5vw, 50px);
+  font-family: 'aqua', 'montserrat', 'Arial';
+  font-weight: lighter;
+}
+h3 {
+  font-size: 22px;
+  font-family: 'aqua', 'montserrat', 'Arial';
+  
+}
+h4 {
+  font-size: 18px;
+  font-family: 'montserrat', 'Arial', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+h5 {
+  font-size: 36px;
+  font-family: 'aqua', 'Arial';
+  font-weight: lighter;
+  color: #bee2de;
+  line-height: 170%;
+}
+p {
+  font-size: 18px;
+  font-family: 'montserrat', 'Arial', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #777777;
+  font-size: 18px;
+  font-family: 'montserrat', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 935px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
