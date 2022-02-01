@@ -5,7 +5,6 @@ import Portrait from '../media/portrait-min.png'
 import Mountain from '../media/mountain-try.jpg'
 
 
-
 const Frontpage = () => {
     return (
         <>
@@ -28,7 +27,7 @@ const Frontpage = () => {
             
             <section className='skills-section'>
                     <h2>SKILLS</h2>
-                    <div className='skillflex-wrapper'>
+                    <div className='skillflex-wrapper' data-aos='flip-left'>
                         <div className='skills-container'>
                             {
                                 SkillList.map((item, index) => {

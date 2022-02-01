@@ -32,7 +32,6 @@ export const Projectcard = (props) => {
                 <a className='projectdetails-link' href={props.url} target='_blank' rel='noreferrer noopener'>{'Visit page >>>'}</a>
                 <div className='projectdetails-gradient1'></div>
                 <div className='projectdetails-gradient2'></div>
-                <div className='projectdetails-gradient3'></div>
             </div>
         </div>
         

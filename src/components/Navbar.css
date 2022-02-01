@@ -1,7 +1,4 @@
 
-
-
-
 /*MOBILE MENU*/
 .menuicon-container {
     display: none;
@@ -62,26 +59,54 @@
 }
 
 #logo {
-    width: 60px;
+    width: 50px;
 }
 .navbar-wrapper {
+    padding: 10px 0 0 10px;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    left: 0;
     position: fixed;
-    padding: 20px 0 0 30px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;  
+    z-index: 99;
+}
+.navbar-wrapper.scrolled {
+    background-color: #222222;
+}
+
+.background-dark {
+    left: 100%;
+    opacity: 0%;
+    transition: all 0.5s ease-out;
+}
+.background-dark.opened {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    opacity: 70%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    margin: 0;
+    z-index: 100;
 }
 @media screen and (min-width: 936px) {
     #logo {
         margin: 0;
+        width: 60px;
     }
     .background-dark {
         display: none;
     }
-
+    .navbar-wrapper {
+        padding: 20px 0 0 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
     
     .navlinks {
         list-style: none;
@@ -112,40 +137,7 @@
 
 }
 @media screen and (max-width: 935px) {
-    .navlogo-container {
-        max-width: 50px;
-    }
-    #logo {
-        width: 50px;
-    }
-    .background-dark {
-        left: 100%;
-        opacity: 0%;
-        transition: all 0.5s ease-out;
-    }
-    .background-dark.opened {
-        width: 30%;
-        height: 100vh;
-        position: fixed;
-        background-color: black;
-        opacity: 70%;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 11;
-        margin: 0;
-    }
-
-    .navbar-wrapper {
-        padding: 10px 0 0 10px;
-        width: 100vw;
-        height: 70px;
-        top: 0;
-        left: 0;
-    }
-    .navbar-wrapper.scrolled {
-        background-color: #222222;
-    }
+  
     .navlinks-wrapper {
         position: fixed;
         width: 70%;
@@ -168,6 +160,8 @@
         left: 0;
         background-image: linear-gradient(to right, rgba(190, 226, 222, 1), rgba(161, 242, 174, 1));
     }
+    
+    
     .navlinks {
         display: flex;
         flex-direction: column;
@@ -198,9 +192,7 @@
     .menuicon-container.opened .burger::after {
         transform: rotate(-45deg) translate(64px, 64px);
     }
-
-    
-    
-
-    
+  
 }
+
+
