@@ -70,9 +70,7 @@
     position: fixed;
     z-index: 99;
 }
-.navbar-wrapper.scrolled {
-    background-color: #222222;
-}
+
 
 .background-dark {
     left: 100%;
@@ -137,7 +135,9 @@
 
 }
 @media screen and (max-width: 935px) {
-  
+    .navbar-wrapper.scrolled {
+        background-color: #222222;
+    }
     .navlinks-wrapper {
         position: fixed;
         width: 70%;
