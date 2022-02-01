@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Projectcard } from '../parts/Projectcard'
 import './Projectpage.css'
 import { ProjectList } from '../parts/Projectlist'
