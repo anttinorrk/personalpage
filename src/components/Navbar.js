@@ -1,4 +1,4 @@
-import './Navbar.css'
+import './Navbar.scss'
 import {NavItems} from './Navitems'
 import anvector from './media/an-vector.svg'
 import React, {useEffect, useState} from 'react'

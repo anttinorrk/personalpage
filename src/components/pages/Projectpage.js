@@ -1,6 +1,6 @@
 import React from 'react'
 import { Projectcard } from '../parts/Projectcard'
-import './Projectpage.css'
+import './Projectpage.scss'
 import { ProjectList } from '../parts/Projectlist'
 
 const Projectpage = () => {

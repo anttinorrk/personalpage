@@ -1,5 +1,5 @@
 import React from 'react'
-import './Somelinks.css'
+import './Somelinks.scss'
 
 export const Somelinks = () => {
     return (

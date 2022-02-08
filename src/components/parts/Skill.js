@@ -1,4 +1,4 @@
-import './Skill.css'
+import './Skill.scss'
 import { useState } from 'react'
 
 export const Skill = (props) => {

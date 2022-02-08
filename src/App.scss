@@ -6,6 +6,8 @@
   font-family: 'montserrat';
   src: url(components/media/Montserrat-Medium.ttf);
 }
+$header-fonts: 'aqua', 'montserrat', 'Arial';
+$p-fonts: 'montserrat', 'Arial', sans-serif;
 
 * {
   box-sizing: border-box;
@@ -18,48 +20,48 @@ body {
 
 .nav-link a {
   font-size: 20px;
-  font-family: 'aqua', 'Arial';
+  font-family: $header-fonts;
   text-decoration: none;
   color: #ffffff;
 }
 
 h1 {
   font-size: clamp(50px, 10vw, 100px);
-  font-family: 'aqua', 'montserrat', 'Arial';
+  font-family: $header-fonts;
   font-weight: lighter;
 }
 h2 {
   font-size: clamp(25px, 5vw, 50px);
-  font-family: 'aqua', 'montserrat', 'Arial';
+  font-family: $header-fonts;
   font-weight: lighter;
 }
 h3 {
   font-size: 22px;
-  font-family: 'aqua', 'montserrat', 'Arial';
+  font-family: $header-fonts;
   
 }
 h4 {
   font-size: 18px;
-  font-family: 'montserrat', 'Arial', sans-serif;
+  font-family: $p-fonts;
   font-weight: bold;
   margin: 0;
 }
 h5 {
   font-size: 36px;
-  font-family: 'aqua', 'Arial';
+  font-family: $header-fonts;
   font-weight: lighter;
   color: #bee2de;
   line-height: 170%;
 }
 p {
   font-size: 18px;
-  font-family: 'montserrat', 'Arial', sans-serif;
+  font-family: $p-fonts;
 }
 a {
   text-decoration: none;
   color: #777777;
   font-size: 18px;
-  font-family: 'montserrat', 'Arial', sans-serif;
+  font-family: $p-fonts;
 }
 
 @media screen and (max-width: 935px) {

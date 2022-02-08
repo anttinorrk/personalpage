@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projectdetails.css'
+import './Projectdetails.scss'
 
 export const Projectdetails = () => {
 

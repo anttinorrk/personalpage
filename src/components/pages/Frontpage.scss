@@ -6,7 +6,7 @@
     overflow:hidden;
     max-width: 100vw;
     margin: 110px 3% 0 3%;
-    
+    min-height: 70vh;
 }
 .header-wrapper {
     max-width: 600px;
@@ -34,7 +34,6 @@
     filter: grayscale(50%);
 }
 
-
 /* SKILLS SECTION */
 .skills-section {
     background: #111111;
@@ -42,17 +41,20 @@
     display: block;
     min-width: 300px;
     padding: 50px 3% 0 3%;
+    min-height: 100vh;
 }
-
 .keywords-container {
     padding: 15px;
     height: 100%;
     text-align: center;
     margin: 0 5%;
+    h3 {
+        margin: 0;
+        line-height: 140%;
+    }
 }
-.keywords-container h3 {
-    margin: 0; 
-    line-height: 140%;
+.skillflex-wrapper {
+    overflow: hidden;
 }
 
 @media screen and (min-width:936px) {
@@ -75,4 +77,54 @@
    
 }
 
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: 1000;
+    overflow: hidden;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+.loading-screen.moving {
+    background: transparent;
+}
+.loading-screen.hidden {
+    display: none;
 
+}
+.loading-img {
+    width: 80px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease-in-out;
+    animation: loading-fade 1s;
+}
+.loading-img.moving {
+    width: 50px;
+    left: 10px;
+    top: 10px;
+    transform: translate(0, 0);
+}
+@media screen and (min-width: 936px) {
+    .loading-img.moving {
+        width: 60px;
+        left: 30px;
+        top: 10px;
+        transform: translate(0, 0);
+    }
+}
+.loading-img.hidden {
+    display: none;
+}
+
+@keyframes loading-fade {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}

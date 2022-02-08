@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './Projectcard.css'
+import './Projectcard.scss'
 
 export const Projectcard = (props) => {
     const [detailsVisible, setDetailsVisible] = useState(false)

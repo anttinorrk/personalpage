@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css'
+import './Contact.scss'
 import Skimba from '../media/skimbatauko.jpg'
 
 const Contact = () => {

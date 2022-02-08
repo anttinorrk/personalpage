@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Navbar from './components/Navbar'
 import Frontpage from './components/pages/Frontpage'
 import Projectpage from './components/pages/Projectpage'
