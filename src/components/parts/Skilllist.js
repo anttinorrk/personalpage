@@ -1,7 +1,7 @@
 export const SkillList = [
     {
-        name: 'React and Javascript',
-        content: 'React is the main framework that I use in web development. Even though frameworks often make life easier, I also have no problem ditching them and keeping it simple with vanilla JavaScript.'
+        name: 'ReactJS',
+        content: "React is the main framework that I use in web development, and I've gained a solid understanding of it in frontend and fullstack projects."
     },
     {
         name: 'UX Design',

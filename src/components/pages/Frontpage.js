@@ -30,12 +30,14 @@ const Frontpage = () => {
                         className='header-wrapper'>
                         <div className='header-container'>
                             <h1>HOMEPAGE</h1>
-                            <h2>ANTTI NORRKNIIVILA</h2> 
+                            <h2>ANTTI NORRKNIIVILA</h2>
                         </div>
-                        <p>React web developer and programmer with a keen eye for usability and design.
-                            Student of Information Networks in Aalto University. Always looking forwards
-                            to create systems that stand the test of time.
-                        </p>
+                        <div className='introduction-container'>
+                            <p>Hi! I'm a frontend developer from Espoo and a student of Information Networks in Aalto University.
+                                My main tool in development is React, and I also have experience from fullstack technologies such as REST APIs and Node.js.
+                                My goal is to create systems that look and feel professional, with the end user being in the centre of all my designs.
+                            </p>
+                            </div>
                     </div>
                     <div 
                         className='portrait-container'>
