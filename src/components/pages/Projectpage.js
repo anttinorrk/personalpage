@@ -27,6 +27,7 @@ const Projectpage = () => {
                             tag={item.tag}
                             url={item.url}
                             text={item.text}
+                            flip={item.flip}
                         />
                         )
                     })

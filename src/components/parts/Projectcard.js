@@ -1,5 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Projectcard.scss'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 export const Projectcard = (props) => {
     const [detailsVisible, setDetailsVisible] = useState(false)
@@ -11,11 +13,14 @@ export const Projectcard = (props) => {
             setDetailsVisible(true)
         }
     }
+    useEffect(() => {
+        Aos.init({duration: 2000, once: true})
+    })
 
     return (
         <>
         <div className='card-wrapper'>
-            <img className='project-img' src={props.image} alt='' />
+            <img className='project-img' src={props.image} alt='' data-aos={`${props.flip}`} />
             <div className='project-text'  onClick={handleDetails}>
                 <h2 className='project-title'>{props.title}</h2>
                 <div className='tag-container'>

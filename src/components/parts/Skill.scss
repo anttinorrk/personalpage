@@ -38,6 +38,9 @@
         padding: 0 0 0 10px;
     }
 }
+.skill-container:hover {
+    cursor: pointer;
+}
 
 /*DROPDOWN TEXT BOX*/
 .text-container {
@@ -86,7 +89,6 @@
 }
 .plus-icon:hover {
     transform: scale(1.05);
-    cursor: pointer;
 }
 .plus-icon.close {
     transform: rotate(225deg);

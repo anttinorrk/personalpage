@@ -18,9 +18,9 @@ export const Skill = (props) => {
                 
                 <div className='title-wrapper'>
                     <div className='gradient-border'>
-                        <div className='skill-container'>
+                        <div className='skill-container' onClick={handleDropped}>
                             <h3>{props.skillName}</h3>
-                            <div className={`plus-icon ${dropped ? 'close' : ''}`} onClick={handleDropped}>
+                            <div className={`plus-icon ${dropped ? 'close' : ''}`}>
                                 <div className='plus-icon__horizontal'></div>
                             </div>
                         </div>
