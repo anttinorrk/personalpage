@@ -13,7 +13,7 @@ const App = () => {
   //path
   const [pathState, setPathState] = useState('')
   //landingpagen korkeus
-  const [landingState, setLandingState] = useState()
+  const [landingState, setLandingState] = useState(0)
   //tallentaa, pitääkö navbarin olla musta
   const  [black, setBlack] = useState(true)
   //asettaa landingpagen korkeuden
