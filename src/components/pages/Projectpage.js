@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Projectcard } from '../parts/Projectcard'
 import './Projectpage.scss'
 import { ProjectList } from '../parts/Projectlist'
 
-const Projectpage = () => {
+const Projectpage = (props) => {
 
-    
+    //lähettää pathin parentille
+    useEffect(() => {
+        props.pathCallback()
+    }, [])
 
     return (
         <>

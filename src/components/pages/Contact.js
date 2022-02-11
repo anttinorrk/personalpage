@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Contact.scss'
 import Skimba from '../media/skimbatauko.jpg'
 
-const Contact = () => {
+const Contact = (props) => {
+    useEffect(() => {
+        props.pathCallback()
+    }, [])
     return (
         <div>
             <section className='title-section'>

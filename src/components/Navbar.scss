@@ -8,6 +8,7 @@
     transition: all .2s ease-out;
     z-index: 11;
     margin-top: 10px;
+    -webkit-tap-highlight-color: transparent;
 }
 .menuicon-container:hover {
     transform: scale(1.05);
@@ -20,6 +21,9 @@
     position: absolute;
     right: 0;
 }
+.burger.black {
+    background: #111111;
+}
 .burger:before, .burger:after {
     content: '';
     position: absolute;
@@ -27,6 +31,9 @@
     height: 3px;
     background: #ffffff;
     transition: all .3s ease-out;
+}
+.burger.black:before, .burger.black:after {
+    background: #111111;
 }
 .burger:before {
     transform: translate(-8px, -13px);
@@ -57,9 +64,13 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-#logo {
+/*Logo vector*/
+.an-vector {
     width: 50px;
+    height: 56.16px;
+}
+.an-vector.black path {
+    fill: #111111;
 }
 .navbar-wrapper {
     padding: 10px 0 0 10px;
@@ -91,8 +102,11 @@
     z-index: 100;
 }
 @media screen and (min-width: 936px) {
-    #logo {
-        margin: 0;
+    .an-vector {
+        width: 60px;
+        height: 67.4px;
+    }
+    .an-vector {
         width: 60px;
     }
     .background-dark {
@@ -120,13 +134,18 @@
         opacity: 100%;
         background-color: #111111;
     }
-
+    
     .nav-link {
         display: inline;
         list-style: none;
         margin-right: 30px;
     }
-    
+    .nav-link.black a {
+        color: #111111;
+    }
+    .navlinks.scrolled:hover .nav-link.black a {
+        color: #ffffff;
+    }
     
     .navlinks-wrapper .someicons-wrapper {
         display: none;
@@ -134,7 +153,7 @@
    
 
 }
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 935.99px) {
     .navbar-wrapper.scrolled {
         background-color: #222222;
     }
@@ -161,7 +180,6 @@
         background-image: linear-gradient(to right, rgba(190, 226, 222, 1), rgba(161, 242, 174, 1));
     }
     
-    
     .navlinks {
         display: flex;
         flex-direction: column;
@@ -182,17 +200,29 @@
         top: 10px;
         right: 40px;
     }
-    .menuicon-container.opened .burger {
-        transform: translateX(-100px);
-        background: transparent;
+    .navbar-wrapper.scrolled {
+        .burger.black:not(.menuicon-container.opened .burger), .burger.black::before, .burger.black::after {
+            background: #ffffff;
+        }
+        .an-vector.black path {
+            fill: #ffffff;
+        }
     }
-    .menuicon-container.opened .burger::before {
-        transform: rotate(45deg) translate(64px, -64px);
+    .menuicon-container.opened {
+        .burger {
+            transform: translateX(-100px);
+            background: transparent;
+        }
+        .burger::before {
+            transform: rotate(45deg) translate(64px, -64px);
+        }
+        .burger::after {
+            transform: rotate(-45deg) translate(64px, 64px);
+        }
+        .burger.black::before, .burger.black::after {
+            background: #ffffff;
+        }
     }
-    .menuicon-container.opened .burger::after {
-        transform: rotate(-45deg) translate(64px, 64px);
-    }
-  
+   
+
 }
-
-

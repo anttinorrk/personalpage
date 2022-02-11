@@ -63,6 +63,14 @@ a {
   font-size: 18px;
   font-family: $p-fonts;
 }
+span {
+  font-size: 100px;
+  color: #27776D;
+}
+.black-text {
+  color: #111111;
+  margin: 0;
+}
 
 @media screen and (max-width: 935px) {
   h3 {
