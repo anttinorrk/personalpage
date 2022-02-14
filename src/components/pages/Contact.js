@@ -2,9 +2,9 @@ import React, {useEffect} from 'react'
 import './Contact.scss'
 import Skimba from '../media/skimbatauko.jpg'
 
-const Contact = (props) => {
+const Contact = ({pathCallback}) => {
     useEffect(() => {
-        props.pathCallback()
+        pathCallback()
     }, [])
     return (
         <div>

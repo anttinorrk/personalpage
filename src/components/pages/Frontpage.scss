@@ -13,6 +13,7 @@
 }
 .header-container {
     height: 100%;
+    margin-bottom: 30px;
    h1, h3 {
        opacity: 70%;
    }
@@ -53,27 +54,19 @@
 /* INTRODUCTION SECTION */
 
 #portrait-img {
-    width: 80vw;
-    max-width: 300px;
+    width: clamp(250px, 80vw, 400px);
     height: auto;
-    opacity: 90%;
     margin: 50px 0;
 }
 .gradient-bar {
     display: none;
-    width: 3px;
-    height: 400px;
     background-image: linear-gradient( rgba(190, 226, 222, 1), rgba(161, 242, 174, 1));
     margin: 0 50px;
 }
 .introduction-container {
-    padding: 1em;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
+    
     max-width: 700px;
     margin-bottom: 20px;
-    overflow: hidden;
     h1 {
         margin: 0;
     }
@@ -81,7 +74,7 @@
 .introduction-section {
     border-width: 0 0 3px 0;
     border-style: solid;
-    border-color: #222222;
+    border-color: #1c2222;
 }
 
 /* SKILLS SECTION */
@@ -92,12 +85,6 @@
     min-width: 300px;
     padding: 50px 3% 0 3%;
     min-height: 100vh;
-}
-.introduction-section {
-    background-color: #111111;
-}
-.gradient-section {
-    background-color: #222222;
 }
 #croppedmntn {
     width: 100vw;
@@ -113,6 +100,11 @@
 }
 .h3-container {
     min-width: 300px;
+    padding: 30px 0;
+ }
+ .Typewriter__cursor {
+     color: #27776d;
+     font-size: 1em;
  }
 .skillflex-wrapper {
     overflow: hidden;
@@ -142,13 +134,13 @@
         padding: 150px 0;
     }
     #portrait-img {
-        width: 30vw;
-        max-width: 400px;
-        height: auto;
-        margin: 50px;
+        width: clamp(400px, 30vw, 550px);
     }
     .gradient-bar {
-        display: block;
+        display: inline-block;
+        width: 3px;
+        height: 50vh;
+        
     }
 
     .skills-section {

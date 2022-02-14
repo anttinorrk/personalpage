@@ -8,7 +8,6 @@
     transition: all .2s ease-out;
     z-index: 11;
     margin-top: 10px;
-    -webkit-tap-highlight-color: transparent;
 }
 .menuicon-container:hover {
     transform: scale(1.05);
@@ -65,6 +64,9 @@
     transform-origin: bottom left;
 }
 /*Logo vector*/
+.navlogo-container.transparent {
+    opacity: 0%;
+}
 .an-vector {
     width: 50px;
     height: 56.16px;
@@ -155,7 +157,7 @@
 }
 @media screen and (max-width: 935.99px) {
     .navbar-wrapper.scrolled {
-        background-color: #222222;
+        background-color: #1c2222;
     }
     .navlinks-wrapper {
         position: fixed;

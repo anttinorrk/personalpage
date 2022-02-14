@@ -3,11 +3,11 @@ import { Projectcard } from '../parts/Projectcard'
 import './Projectpage.scss'
 import { ProjectList } from '../parts/Projectlist'
 
-const Projectpage = (props) => {
+const Projectpage = ({pathCallback}) => {
 
     //lähettää pathin parentille
     useEffect(() => {
-        props.pathCallback()
+        pathCallback()
     }, [])
 
     return (

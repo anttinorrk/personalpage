@@ -6,6 +6,7 @@ import Contact from './components/pages/Contact'
 import React, {useEffect, useState} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Footer from './components/parts/Footer'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 
 
@@ -28,27 +29,28 @@ const App = () => {
   
   useEffect(() => {
     window.addEventListener('scroll', () =>
-        setBlack(pathState === '/' && window.pageYOffset < landingState + 70)
+        setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
     )
 })
   //Kun sivu vaihtuu, muutetaan tarvittaessa navbarin väriä
   useEffect(() => {
-    setBlack(pathState === '/' && window.pageYOffset < landingState + 70)
+    setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
   }, [pathState])
   return (
-    <Router>
-      <div className="App">
-        
-        <Routes>
-          <Route path='/' element={<Frontpage appCallback={handleCallback} pathCallback={handlePath} />} />
-          <Route path='/projects' element={<Projectpage pathCallback={handlePath} />} />
-          <Route path='/contact' element={<Contact pathCallback={handlePath} />} />
-        </Routes>
-        <Footer />
-        <Navbar black={black} />
-      </div>
-    </Router>
-   
+    <ParallaxProvider>
+      <Router>
+        <div className="App">
+          
+          <Routes>
+            <Route path='/' element={<Frontpage appCallback={handleCallback} pathCallback={handlePath} />} />
+            <Route path='/projects' element={<Projectpage pathCallback={handlePath} />} />
+            <Route path='/contact' element={<Contact pathCallback={handlePath} />} />
+          </Routes>
+          <Footer />
+          <Navbar black={black} pathCallback={handlePath} />
+        </div>
+      </Router>
+    </ParallaxProvider>
   );
 }
 
