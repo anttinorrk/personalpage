@@ -32,12 +32,12 @@ const App = () => {
   
   useEffect(() => {
     window.addEventListener('scroll', () =>
-        comparision
+        comparision()
     )
 })
   //Kun sivu vaihtuu, muutetaan tarvittaessa navbarin väriä
   useEffect(() => {
-    comparision
+    comparision()
   }, [pathState])
 
 
