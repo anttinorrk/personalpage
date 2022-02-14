@@ -39,13 +39,10 @@ const Frontpage = ({appCallback, pathCallback}) => {
 
     //Hakee landingsectionin korkeuden ja passaa sen propsina parentille
     const landingRef = useRef();
-    const getLandingHeight = () => {
-        const newHeight = landingRef.current.clientHeight
-        console.log('new height is :', newHeight)
-        appCallback(newHeight)
-    }
     useEffect(() => {
-        getLandingHeight()
+            const newHeight = landingRef.current.clientHeight
+            console.log('new height is :', newHeight)
+            appCallback(newHeight)
     }, [])
     //getLandingHeightiä kutsutaan, kun oltu resizaamatta 200ms
     //let time

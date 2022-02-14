@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Frontpage from './components/pages/Frontpage'
 import Projectpage from './components/pages/Projectpage'
 import Contact from './components/pages/Contact'
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useCallback} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Footer from './components/parts/Footer'
 import { ParallaxProvider } from 'react-scroll-parallax'
@@ -23,19 +23,24 @@ const App = () => {
       console.log('in App:', landingData)
   }
   //tallentaa, millä sivulla ollaan
-  const handlePath = () => {
+  const handlePath = useCallback(
+    () => {
     setPathState(window.location.pathname)
-  }
+  }, [window.location.pathname])
+    
+  const comparision = () => setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
   
   useEffect(() => {
     window.addEventListener('scroll', () =>
-        setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
+        comparision
     )
 })
   //Kun sivu vaihtuu, muutetaan tarvittaessa navbarin väriä
   useEffect(() => {
-    setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
+    comparision
   }, [pathState])
+
+
   return (
     <ParallaxProvider>
       <Router>
