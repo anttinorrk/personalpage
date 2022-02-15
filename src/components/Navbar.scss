@@ -15,7 +15,7 @@
 .burger {
     width: 35px;
     height: 3px;
-    background: #ffffff;
+    background: #fcfcfc;
     transition: all .3s ease-out;
     position: absolute;
     right: 0;
@@ -28,7 +28,7 @@
     position: absolute;
     width: 35px;
     height: 3px;
-    background: #ffffff;
+    background: #fcfcfc;
     transition: all .3s ease-out;
 }
 .burger.black:before, .burger.black:after {
@@ -146,7 +146,7 @@
         color: #111111;
     }
     .navlinks.scrolled:hover .nav-link.black a {
-        color: #ffffff;
+        color: #fcfcfc;
     }
     
     .navlinks-wrapper .someicons-wrapper {
@@ -157,12 +157,12 @@
 }
 @media screen and (max-width: 935.99px) {
     .navbar-wrapper.scrolled {
-        background-color: #1c2222;
+        background-color: #1e2222;
     }
     .navlinks-wrapper {
         position: fixed;
         width: 70%;
-        background: #222222;
+        background: #1e2222;
         height: 100vh;
         margin: 0;
         top: 0;
@@ -204,10 +204,10 @@
     }
     .navbar-wrapper.scrolled {
         .burger.black:not(.menuicon-container.opened .burger), .burger.black::before, .burger.black::after {
-            background: #ffffff;
+            background: #fcfcfc;
         }
         .an-vector.black path {
-            fill: #ffffff;
+            fill: #fcfcfc;
         }
     }
     .menuicon-container.opened {
@@ -222,7 +222,7 @@
             transform: rotate(-45deg) translate(64px, 64px);
         }
         .burger.black::before, .burger.black::after {
-            background: #ffffff;
+            background: #fcfcfc;
         }
     }
    

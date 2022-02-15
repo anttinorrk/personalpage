@@ -27,20 +27,16 @@ const App = () => {
     () => {
     setPathState(window.location.pathname)
   }, [window.location.pathname])
-    
-  const comparision = () => setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
   
   useEffect(() => {
     window.addEventListener('scroll', () =>
-        comparision()
+        setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
     )
 })
   //Kun sivu vaihtuu, muutetaan tarvittaessa navbarin väriä
   useEffect(() => {
-    comparision()
+    setBlack(pathState === '/' && window.pageYOffset < landingState - 50)
   }, [pathState])
-
-
   return (
     <ParallaxProvider>
       <Router>

@@ -44,7 +44,7 @@
 
 /*DROPDOWN TEXT BOX*/
 .text-container {
-    background: #222222;
+    background: #1e2222;
     width: 100%;
     padding-top: 30px;
     transform: translateY(-250px);
@@ -76,7 +76,7 @@
 .plus-icon__horizontal {
     width: 35px;
     height: 3px;
-    background: #ffffff;
+    background: #fcfcfc;
 }
 .plus-icon__horizontal::after {
     content: '';
@@ -85,7 +85,7 @@
     top: 0px;
     width: 3px;
     height: 35px;
-    background: #ffffff;
+    background: #fcfcfc;
 }
 .plus-icon:hover {
     transform: scale(1.05);

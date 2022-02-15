@@ -9,7 +9,7 @@ export const SkillList = [
     },
     {
         name: 'Music',
-        content: 'I am an independent musician and a songwriter about to publish my solo debut this year. During my multiple years of managing a band I played in I gained experience from marketing and booking gigs.'
+        content: 'I am an independent musician and a songwriter about to publish my solo debut this year. During my multiple years of managing a band I played in I gained experience from e.g. marketing and negotiating.'
     },
     {
         name: 'Video Editing',
