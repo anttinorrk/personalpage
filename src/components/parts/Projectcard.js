@@ -26,12 +26,11 @@ export const Projectcard = (props) => {
                 <h2>{props.title}</h2>
                 <div className='tag-container'>
                     <h3>{props.tag}</h3>
-                    
                 </div>
                 <p>{props.text}</p>
                 <a className='projectdetails-link' href={props.url} target='_blank' rel='noreferrer noopener'>{'Visit page >>>'}</a>
-                <div className='projectdetails-gradient1'></div>
-                <div className='projectdetails-gradient2'></div>
+                
+                
             </div>
         </div>
         

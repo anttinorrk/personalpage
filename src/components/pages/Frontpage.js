@@ -64,11 +64,18 @@ const Frontpage = ({appCallback, pathCallback}) => {
                             </div>
                             <div className='h3-container'>
                                 <h3 className='black-text'>
-                                    <Typewriter loop={true}
+                                    <Typewriter options={{loop: true}}
                                         onInit={(tw) => {
                                             tw
                                             .pauseFor(2000)
-                                            .typeString('FRONTEND DEVELOPER')
+                                            .typeString('FRONTEND DEVELOPMENT')
+                                            .pauseFor(1500)
+                                            .deleteAll()
+                                            .typeString('DATABASES')
+                                            .pauseFor(1500)
+                                            .deleteAll()
+                                            .typeString('GROWTH HACKING')
+                                            .pauseFor(1500)
                                             .start();
                                         }}
                                     />
@@ -95,10 +102,10 @@ const Frontpage = ({appCallback, pathCallback}) => {
                          <Parallax translateX={[100, -20]}>
                             <h1>Hi!</h1>
                         </Parallax>
-                        <p>I'm a frontend developer from Espoo and a student of Information Networks in Aalto University.
-                            My main tool in development is React, and I also have experience from fullstack technologies such as REST APIs and Node.js.
-                            I aim to create systems that both look and feel unique and professional, with the end user being in the centre of all my designs.
-                        </p>
+                        <p>I’m a frontend-oriented developer from Espoo and a student of Information Networks in Aalto University.</p>
+                        <p>For me, technology is a way to help businesses grow by making operations smoother and creating lasting first impressions. Therefore, I don’t settle to the same old routines, but constantly stay up to date with the latest technologies and trends, giving your company the edge over others.</p>
+                        <p>From this page you can learn more about my skills and experience to see if I’m the right fit for your project or company. Don’t be afraid to drop me a message in social media!</p>
+                        <p style={{fontStyle: "italic"}}>- Antti Norrkniivilä</p>
                     </div>
                 </div>
             </section>
