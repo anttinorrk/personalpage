@@ -15,13 +15,6 @@ export const ProjectList = [
         url: 'https://users.aalto.fi/norrkna1/Weather'
     },
     {
-        image: require('../media/sssuurempaa-min.jpg'),
-        title: 'Campaign Site',
-        tag: 'React, Video Editing',
-        text: 'University course project executed by a group of four people. I was responsible for most of the programming on the page and implemented for example a true/false game onto the page. In addition, I was responsible for creating the campaign video on the home page.',
-        url: 'https://osanasuurempaa.netlify.app'
-    },
-    {
         image: require('../media/ssdatabase-min.jpg'),
         title: 'Access Database',
         tag: 'SQL&VBA',
