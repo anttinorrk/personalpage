@@ -61,9 +61,11 @@
     top: 10%;
     left: 10%;
     z-index: 5;
-    background-color: #222222;
+    background-color: #1e2222;
     margin: 0;
-    overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     opacity: 0;
     padding: 1em;
     text-align: center;
@@ -71,6 +73,9 @@
     transform: translateY(-100vh);
     border-bottom: 25px solid #a1f2ae;
 }
+.projectdetails-wrapper::-webkit-scrollbar {
+    display: none;
+}  
 
 .projectdetails-wrapper.visible {
     opacity: 1;
