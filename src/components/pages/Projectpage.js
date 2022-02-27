@@ -36,7 +36,9 @@ const Projectpage = ({pathCallback}) => {
                     })
                 }
             </div>
-            
+            <div className='github-container'>
+                <p>See more on my <a href='https://github.com/anttinorrk' target='_blank' rel='noreferrer noopener'>GitHub</a>.</p>
+            </div>
         </section>
         
         
