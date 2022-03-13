@@ -29,6 +29,12 @@
 .github-container {
     text-align: center;
     padding: 5em 0;
+    a {
+        transition: all .3s ease-in-out;
+    }
+    a:hover {
+        color: #bee2de;
+    }
 }
 
 @media screen and (min-width: 1300px) {

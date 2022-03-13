@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './Contact.scss'
-import Skimba from '../media/skimbatauko.jpg'
+import Skimba from '../media/skimbatauko1080-min.jpg'
 
 const Contact = ({pathCallback}) => {
     useEffect(() => {

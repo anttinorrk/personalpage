@@ -4,9 +4,11 @@
 }
 .skimbaimg-container {
     overflow: hidden;
+    min-width: 40vw;
 }
 #skimba-img {
     width: 100%;
+    
 }
 @media screen and (min-width: 936px) {
     .contact-section {

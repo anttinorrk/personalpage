@@ -46,6 +46,8 @@
     padding-bottom: 5px;
     text-decoration: none;
 }
+
+
 /*HOVER UNDERLINE*/
 .nav-link a:after {
     content: '';
@@ -129,6 +131,7 @@
         border-radius: 30px;
         transition: all 0.25s ease-out;
     }
+ 
     .navlinks.scrolled {
         opacity: 30%;
     }
@@ -210,6 +213,7 @@
             fill: #fcfcfc;
         }
     }
+    
     .menuicon-container.opened {
         .burger {
             transform: translateX(-100px);
@@ -228,3 +232,9 @@
    
 
 }
+
+.an-vector:hover, .an-vector.black:hover {
+    transition: all .25s ease-out;
+    transform: scale(1.03);
+}
+
