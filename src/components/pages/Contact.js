@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import './Contact.scss'
 import Skimba from '../media/skimbatauko1080-min.jpg'
+import Portrait from '../media/monaco-pic.jpg'
 
 const Contact = ({pathCallback}) => {
     useEffect(() => {
@@ -18,8 +19,8 @@ const Contact = ({pathCallback}) => {
                     <h2>ANYTHING ON YOUR MIND?</h2>
                     <p>Hit me up in any of my social media profiles linked below and let's see if I'm the right fit for your project or company right now or sometime in future!</p>
                 </div>
-                <div className='skimbaimg-container'>
-                    <img id='skimba-img' src={Skimba} alt='' />
+                <div className='contactimg-container'>
+                    <img id='contact-img' src={Portrait} alt='' />
                 </div>
             </section>
         </div>
